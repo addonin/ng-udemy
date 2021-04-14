@@ -2,14 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from "./header/header.component";
+import { HeaderComponent } from './header/header.component';
 import { RecipiesComponent } from './recipies/recipies.component';
 import { RecipeListComponent } from './recipies/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipies/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipies/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-import { RouterModule } from "@angular/router";
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { RouterModule } from "@angular/router";
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([], { relativeLinkResolution: 'legacy' })
   ],
   providers: [],
   bootstrap: [AppComponent]
